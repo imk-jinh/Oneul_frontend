@@ -1,0 +1,98 @@
+.content_space {
+    height: calc(100% - 195px);
+}
+
+.title {
+    color: #000000;
+    flex-shrink: 0;
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    line-height: 1.2575;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.eventName {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    font-size: 0.9rem;
+}
+
+.eventImgBox {
+    position: relative;
+    /* 상대 위치 설정 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+}
+
+.centeredContent {
+    position: absolute;
+    /* 절대 위치 설정 */
+    top: 50%;
+    /* 상단에서 50% 위치 */
+    margin-left: 55%;
+    /* 왼쪽에서 50% 위치 */
+    transform: translate(-50%, -50%);
+    /* 변환을 사용하여 정확한 중앙 위치 조정 */
+    width: 100%;
+    /* 너비 100% 설정 */
+    text-align: left;
+}
+
+#boldWhite {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    /* font-weight: 700; */
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px #000000;
+    /* 검은색 그림자 추가 */
+}
+
+#white {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px #000000;
+    /* 검은색 그림자 추가 */
+}
+
+#boldBlack {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    /* font-weight: 700; */
+    color: #000000;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px gray;
+    /* 검은색 그림자 추가 */
+}
+
+#black {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    color: #000000;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px gray;
+    /* 검은색 그림자 추가 */
+}
+
+.backImg {
+    border-radius: 1.2rem;
+    width: 100%;
+    max-height: fit-content;
+}
+
+.contentcontent_space {
+    overflow-x: hidden;
+    width: 90%;
+    /* 요소의 너비를 100%로 설정 */
+    top: calc(4rem + 70px);
+    height: calc(100% - (8.4rem + 69px));
+    margin-bottom: 12.7rem;
+    /* 원하는 높이로 조정 */
+    overflow-y: auto;
+    /* 세로 스크롤 활성화 */
+    margin-left: 5%;
+    /* padding-bottom: 4rem; */
+    position: relative;
+
+}

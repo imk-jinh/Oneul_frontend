@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'AppleSDGothicNeoB00';
+  src: url('/font/APPLESDGOTHICNEOB.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gmarket Sans';
+  src: url('/font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gmarket Sans TTF';
+  src: url('/font/GmarketSansMedium.otf') format('opentype');
+}
+
+
+.LoginFrame {
+  background-color: #fffeed;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* position: absolute; */
+
+}
+
+.LoginTitle0 {
+  align-self: flex-start;
+  color: #000000;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+  font-size: 1.0rem;
+  font-weight: 400;
+  letter-spacing: 0.034rem;
+  line-height: 1.2575;
+  margin: 5rem 0rem 2rem 10%;
+}
+
+.LoginFrame2 {
+  align-self: flex-start;
+  color: #000000;
+  flex-shrink: 0;
+  font-family: Gmarket Sans, 'Source Sans Pro';
+  /* font-size: 5.2rem; */
+  font-weight: 500;
+  line-height: 1.2575;
+  margin: 0rem 0rem 0rem 10%;
+  max-width: 100%;
+}
+
+.LoginTitle1 {
+  max-width: 100%;
+  color: #000000;
+  font-family: Gmarket Sans, 'Source Sans Pro';
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.2575;
+}
+
+
+.LoginTitle3 {
+  color: #0c0c0c;
+  font-family: Gmarket Sans TTF, 'Source Sans Pro';
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2575;
+}
+
+.LoginFrame3 {
+
+  flex-shrink: 0;
+  bottom: 4rem;
+  justify-content: center;
+  /* 좌우 중앙 정렬 */
+  align-items: center;
+  position: absolute;
+  width: 23rem;
+
+}
+
+.LoginFrame4 {
+  background-color: #ffe500;
+  border-radius: 2rem;
+  height: 3.8rem;
+  position: relative;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.talk-mWd {
+  height: 1.1448rem;
+  object-fit: contain;
+  top: 2rem;
+  vertical-align: top;
+  width: 1.4562rem;
+  margin-right: 1rem;
+}
+
+.LoginTitle4 {
+  color: #000000;
+  font-family: AppleSDGothicNeoEB00, 'Source Sans Pro';
+  font-size: 1rem;
+  font-weight: 400;
+  height: 5rem;
+  line-height: 5.066666667;
+  top: 0;
+  white-space: nowrap;
+  width: 6.2rem;
+  margin-right: 2.1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .LoginTitle0 {
+    margin: 5rem 0rem 3rem 10%;
+    font-size: 0.8rem;
+  }
+
+  .LoginTitle1 {
+    font-size: 3rem;
+  }
+
+  .LoginTitle3 {
+    font-size: 1.5rem;
+  }
+
+  .LoginFrame3 {
+    width: 20rem;
+  }
+
+  .LoginFrame4 {
+    height: 3.1rem;
+  }
+}

@@ -1,0 +1,35 @@
+.mid-space {
+  margin: 5rem 1.4rem 0rem 1.4rem;
+  display: flex;
+  flex-direction: column; /* 수직 스택 구조 */
+  align-items: center; /* 중앙 정렬 */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pwdGuide {
+  margin: 0 0 0.7rem 0;
+  align-self: flex-start;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.wholeSpace {
+  border-radius: 0.6rem;
+  background: #F2F2F2;
+  margin-bottom: 2.3rem;
+  width: 100%; /* 부모 요소에 맞춰 너비 설정 */
+  height: 2.2rem;
+  border: none;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+
+.block {
+  width: 100%; /* block 요소도 전체 너비 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

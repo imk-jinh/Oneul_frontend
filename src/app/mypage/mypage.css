@@ -1,0 +1,237 @@
+.frame {
+  /* overflow-x: hidden; */
+  width: 100%;
+  height: 100vh;
+}
+
+.content_space_mypage {
+  padding-bottom: 70px;
+}
+
+.decoLine_X {
+  text-decoration: none;
+}
+
+.top-space {
+  top: 2.7rem;
+  background: #FFFEED;
+  position: relative;
+  /* margin-bottom: 3.9rem; */
+  display: flex;
+  flex-direction: column;
+  /* 요소들을 세로로 배치합니다. */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  padding: 1.8rem 1.3rem 0 1.3rem;
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+
+}
+
+.dd {
+  width: 9.5rem;
+  height: 12rem;
+  position: absolute;
+  display: block;
+}
+
+.userProfile-img {
+  border-radius: 3.3rem;
+  position: relative;
+  margin-bottom: 0.9rem;
+  width: 9.5rem;
+  height: 9.5rem;
+}
+
+.user-name {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.edit-myInfo {
+  text-decoration-line: none;
+  margin-top: 0.3rem;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoEB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #555555;
+  position: relative;
+  top: 80%;
+  text-align: center;
+
+}
+
+.diary_State-box {
+  box-shadow: -0.1rem 0.2rem 0.9rem 0rem #DDDDDD;
+  border-radius: 0.9rem;
+  background: #FFFFFF;
+  position: absolute;
+  top: 17rem;
+  /* 원하는 위치로 조정합니다. */
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0 0.8rem 0;
+  width: 18rem;
+  box-sizing: border-box;
+}
+
+
+.writed-diary,
+.saved-poem-box,
+.matching-count-box {
+  margin: 0rem 1.9rem;
+  /* 일정한 간격으로 상자를 배치합니다. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.diary-line1,
+.diary-line2 {
+  background: #F6F6F6;
+  width: 0.1rem;
+  height: 2.1rem;
+}
+
+/* 일기 개수와 저장된 시, 채팅 매칭 개수의 텍스트 스타일 */
+.diary-count,
+.saved-poem-count,
+.matching-count {
+  margin: 0.3rem 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Gmarket Sans', 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* 일기 개수와 저장된 시, 채팅 매칭 개수의 설명 텍스트 스타일 */
+.diary-count-text,
+.saved-poem-text,
+.matching-count-text {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: #868686;
+}
+
+.editIcon {
+  border-radius: 1.4rem;
+  padding: 0rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+}
+
+
+.option-stack {
+  box-shadow: 0rem 0rem 0.8rem 0rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.9rem;
+  background: #FCFCFC;
+  position: absolute;
+  width: 8rem;
+  bottom:-20%;
+  left: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  z-index: 999;
+}
+
+
+.option-stack-text {
+  margin: 0 1rem 0.3rem 1rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0rem;
+  color: #000000;
+}
+
+.sperate-line {
+  background: #D9D9D9;
+  margin-bottom: 0.4rem;
+  width: 8rem;
+  height: 0.1rem;
+}
+
+.options-container {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.option-list-box {
+  padding-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  width: 100%;
+  position: relative;
+}
+
+.option-list-box-text {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #A9A9A9;
+  margin-left: 1rem;
+
+}
+
+#separateLine.option-list-box {
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.option-box {
+  margin: 0 1.4rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  height: 3rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.option-box:hover {
+  background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+  color: #333; /* 호버 시 글자색 변경 */
+}
+
+.option-text {
+  text-decoration: none;
+  margin-right: 0.7rem;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-left: 1.2rem;
+  align-content: center;
+}

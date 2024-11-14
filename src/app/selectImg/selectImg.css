@@ -1,0 +1,380 @@
+.content_space_selImg {
+  overflow-x: hidden;
+  /* 요소의 너비를 100%로 설정 */
+  height: calc(100% - 130px);
+  /* margin-bottom: 70px; */
+  /* 원하는 높이로 조정 */
+  overflow-y: auto;
+  /* 세로 스크롤 활성화 */
+  /* padding-bottom: 4rem; */
+  position: relative;
+}
+
+.frame0 {
+  background-color: #ffffff;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  position: relative;
+}
+
+.backKey {
+  align-self: flex-start;
+  flex-shrink: 0;
+  height: 1.5rem;
+  margin: 2rem 0rem 2rem 2rem;
+  object-fit: contain;
+  position: relative;
+  vertical-align: top;
+  width: 1.8rem;
+}
+
+.Title0 {
+  position: relative;
+  color: #000000;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 0.06rem;
+  line-height: 1.2575;
+  margin: 0rem 0rem 1.4rem 2rem;
+  max-width: 100%;
+}
+
+
+.Title1 {
+  position: relative;
+  color: #a8a8a8;
+  flex-shrink: 0;
+  margin: 1rem 0rem 2rem 2rem;
+  max-width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+.frame1 {
+  position: relative;
+  margin: 2rem 0rem 0rem 0rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+}
+
+.Name {
+  position: relative;
+  margin: 1rem 0rem 0rem 0rem;
+  align-items: center;
+  color: #000000;
+  display: flex;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+  font-size: 1.8rem;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.2575;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  /* 수평 중앙 정렬 */
+  align-items: center;
+  /* 수직 중앙 정렬 */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 부모 요소의 높이도 필요할 경우 설정 */
+}
+
+.userImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  /* 이미지를 원형으로 만들기 */
+  object-fit: cover;
+  /* 이미지 비율을 유지하며 부모 영역에 맞춤 */
+}
+
+/* 화면의 너비가 660px 이상이고, 높이가 800px 이상일 때 */
+@media (min-width: 600px) and (min-height: 375px) {
+  .userImg {
+    width: 50%;
+    /* 원하는 크기로 조정 */
+  }
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: slideIn 1s ease forwards;
+  border-radius: 15px;
+  /* 검정색 실선 테두리 추가 */
+  box-sizing: border-box;
+}
+
+.modal-container {
+  /* border-radius: 15px;
+  border: 3px solid #000; */
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 1.8rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-header {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 3.5rem;
+  justify-content: center;
+  /* 가로 중앙 정렬 */
+}
+
+.modal-btn-cancel {
+  text-align: center;
+  flex: 1;
+  color: #000000;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoR00, 'Source Sans Pro';
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.028rem;
+  line-height: 1.2575;
+  white-space: nowrap;
+}
+
+.modal-btn-library {
+  margin: 0 0 0 0;
+  padding-bottom: 0.3rem;
+  text-align: center;
+  flex: 3;
+  color: #000000;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.096rem;
+  line-height: 1.2575;
+  white-space: nowrap;
+}
+
+.modal-btn-done {
+  text-align: center;
+  flex: 1;
+  color: #4b9eff;
+  flex-shrink: 0;
+  font-family: AppleSDGothicNeoR00, 'Source Sans Pro';
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.028rem;
+  line-height: 1.2575;
+  white-space: nowrap;
+}
+
+.image-section {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  display: block;
+}
+
+.modal-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255);
+  object-fit: cover;
+}
+
+.modal-image2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255);
+}
+
+.overlay2 {
+  /* border-radius: 20%; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 192, 192, 0.3);
+  z-index: 5;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  /* 안쪽을 투명하게 */
+  border-radius: 20%;
+  /* 둥근 모서리 */
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.635);
+  /* 바깥쪽에 반투명한 회색 그림자 */
+  z-index: 6;
+}
+
+.modal-image,
+.modal-image2 {
+  touch-action: manipulation;
+}
+
+/* selectImg.css */
+
+.success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.success-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success-container p {
+  margin-bottom: 20px;
+}
+
+.success-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-container button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.confirm {
+  background-color: #ffffff;
+  color: #000000;
+  border: solid 0.09rem #000000;
+  border-radius: 0.9rem;
+  box-sizing: border-box;
+  height: 3rem;
+  width: 90%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* absolute로 설정하여 부모 요소의 하단에 위치 */
+  bottom: 1rem;
+  left: 5%;
+  transition: all 0.3s ease;
+}
+
+
+.confirm:hover {
+  background-color: #000000;
+  /* 배경색 반전 */
+  color: #ffffff;
+  /* 텍스트 색상 반전 */
+  border-color: #ffffff;
+  /* 테두리 색상 반전 */
+  cursor: pointer;
+  /* 커서 모양을 포인터로 변경 */
+}
+
+.confirm:active {
+  transform: scale(0.95);
+  /* 크기를 살짝 축소 */
+  transition: transform 0.1s ease;
+  /* 클릭 시 빠르게 축소 */
+}
+
+
+
+.TitleNext {
+  color: inherit;
+  /* 부모의 색상을 상속 (hover 상태에서 흰색) */
+  font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  white-space: nowrap;
+}
+
+.imgcenter {
+  width: 100%;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

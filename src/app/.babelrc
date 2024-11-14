@@ -1,0 +1,15 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+        "styled-components",
+        {
+          "ssr": true,
+          "displayName": true,
+          "preprocess": false
+        }
+      ]
+    ]
+  }
+
+//   css새로고침시 깨지는 것 방지하려고 추가

@@ -1,0 +1,204 @@
+.top {
+    margin: 1.5rem 0rem 2rem 0rem;
+}
+
+.backKey {
+    align-self: flex-start;
+    flex-shrink: 0;
+    height: 2rem;
+    margin: 0rem 0rem 1rem 1rem;
+    object-fit: contain;
+    position: relative;
+    vertical-align: top;
+    width: 1.8rem;
+}
+
+
+.frame2 {
+    align-self: flex-start;
+    flex-shrink: 0;
+    height: auto;
+    left: 5%;
+    width: 90%;
+    position: relative;
+
+}
+
+.Title {
+    font-weight: bold;
+    margin: 0 0 0 0;
+    color: #000000;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.7rem;
+    letter-spacing: 0.054rem;
+    line-height: 1.2575;
+    width: 100%;
+    position: relative;
+}
+
+.Title2 {
+    align-self: flex-start;
+    color: #4b4b4b;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2575;
+    margin: 1.5rem 0 0.5rem 0;
+    white-space: nowrap;
+    position: relative;
+    left: 5%;
+    width: 90%;
+
+}
+
+.frame3 {
+    /* flex-shrink: 0; */
+    height: calc(100% - 18rem);
+    left: 5%;
+    width: 90%;
+    overflow-y: auto;
+    /* 자식 요소에 상하 스크롤 허용 */
+
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    position: relative;
+}
+
+
+
+.Line {
+    align-self: center;
+    background-color: #dedede;
+    /* flex-shrink: 0; */
+    height: 0.1rem;
+    width: 100%;
+
+}
+
+.CountryList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.Contry {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.CountryList.hovered {
+    transform: scale(1.05);
+    /* 클릭 시 요소 크기 1.05배 확대 */
+    background-color: #e0e0e0;
+    /* 클릭 시 회색으로 변경 */
+}
+
+.CountryList {
+    background-color: #ffffff;
+    /* 원래 상태에서 흰색 */
+}
+
+
+.Country_Img {
+    flex: 0 0 2.5rem;
+    /* width 값을 2.5rem으로 설정하여 직사각형 모양을 만듦 */
+    object-fit: cover;
+    width: 2.5rem;
+    /* 가로 길이를 세로 길이보다 조금 더 길게 설정 */
+    height: 2rem;
+    /* 세로 길이는 그대로 유지 */
+    margin-right: 1rem;
+    border-radius: 10%;
+    border: 0.5px solid #000000;
+    /* 2px 두께의 검정 테두리 */
+}
+
+.Country_Title {
+    flex: 8;
+    color: #4b4b4b;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+}
+
+.Check {
+    flex: 1;
+    width: 1rem;
+    height: 1rem;
+    right: 2rem;
+    margin-left: auto;
+    position: absolute;
+}
+
+.frame5 {
+    bottom: 0;
+    background-color: #ffffff;
+    color: #000000;
+    /* 텍스트 색상 */
+    border: solid 0.15rem #000000;
+    border-radius: 0.9rem;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    /* position: fixed; */
+    transition: all 0.3s ease;
+    /* 부드러운 전환 */
+    left: 5%;
+}
+
+.frame5:hover {
+    background-color: #000000;
+    /* 배경색 반전 */
+    color: #ffffff;
+    /* 텍스트 색상 반전 */
+    border-color: #ffffff;
+    /* 테두리 색상 반전 */
+    cursor: pointer;
+    /* 커서 모양을 포인터로 변경 */
+}
+
+.frame5:active {
+    transform: scale(0.95);
+    /* 크기를 살짝 축소 */
+    transition: transform 0.1s ease;
+    /* 클릭 시 빠르게 축소 */
+}
+
+
+
+.TitleNext {
+    color: inherit;
+    /* 부모의 색상을 상속 (hover 상태에서 흰색) */
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    white-space: nowrap;
+}
+
+
+.a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .frame5 {
+        width: 15.5rem;
+    }
+
+}

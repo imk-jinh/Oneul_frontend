@@ -1,0 +1,76 @@
+.deco_none {
+  text-decoration: none;
+}
+
+.content_space_userInfo {
+  overflow-x: hidden;
+  width: 100%;
+  height: max-content;
+  margin-bottom: 70px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.option-list-box {
+  margin-top: 2.7rem;
+  padding-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  width: 100%;
+  position: relative;
+}
+
+.option-list-box-text {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #a9a9a9;
+  margin-left: 1rem;
+}
+
+.option-box {
+  margin: 0rem 1.4rem 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  height: 6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.option-text {
+  margin-right: 0.7rem;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-left: 1.2rem;
+  align-content: center;
+  height: 3rem;
+}
+
+.option-text-fill {
+  margin: 0rem 0rem 0rem 1.2rem;
+  width: 100%;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #000000;
+  height: 3rem;
+  align-content: center;
+}
+
+.right-arrow {
+  width: 0.4rem;
+  height: 0.8rem;
+  margin-right: 1.3rem;
+  align-self: center;
+}

@@ -1,0 +1,278 @@
+.title {
+    align-items: baseline;
+    color: #000000;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.05rem;
+    line-height: 1.2575;
+    margin: 0;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.poemBox {
+    background-image: url('/contentPage/makePoem/background.svg');
+    /* Replace with the correct path to your image */
+    background-size: cover;
+    /* Ensure the background image covers the entire box */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    width: 100%;
+    /* Adjust width and height as needed */
+    height: auto;
+    border-radius: 8%;
+    position: relative;
+    /* 부모 요소에 상대 위치 지정 */
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.poem_top {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    /* 좌우 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+}
+
+.poem_title {
+    font-size: 1.6rem;
+    width: 100%;
+    /* 부모 요소에 맞게 너비 설정 */
+}
+
+.poem_day {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    /* 오른쪽으로 고정 */
+    font-size: 1.3rem;
+}
+
+
+.poem_content {
+    position: relative;
+    padding: 0 15%;
+    /* 상하 여백은 0, 좌우 여백은 화면 너비의 10% */
+}
+
+.eventSpace {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.eventName {
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    font-size: 1.4rem;
+}
+
+.calenderIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    /* 원의 크기를 설정합니다 */
+    height: 2.2rem;
+    /* 너비와 높이를 같게 하여 원 형태를 유지합니다 */
+    background-color: #f0f0f0;
+    /* 배경색을 설정합니다 (원하는 색으로 변경) */
+    border-radius: 50%;
+    /* 동그란 테두리를 생성합니다 */
+    border: 2px solid #ccc;
+    /* 테두리 색과 두께를 설정합니다 (원하는 색으로 변경) */
+    box-sizing: border-box;
+    /* 테두리 두께를 포함하여 전체 크기 계산 */
+    margin-right: 1rem;
+    /* 오른쪽 여백 설정 */
+}
+
+.calenderIcon {
+    width: 1.4rem;
+    /* 아이콘의 크기 설정 */
+    height: 1.4rem;
+    /* 아이콘의 높이 설정 */
+    /* 아이콘 크기를 조정할 수 있습니다 */
+}
+
+
+
+.poemContent {
+    font-family: 'Garamond', serif;
+    /* 글꼴 설정 */
+    font-size: 16px;
+    /* 글꼴 크기 설정 */
+    line-height: 1.6;
+    /* 줄 간격 설정 */
+    color: #fff;
+    /* 텍스트 색상 설정 (배경에 맞게 조정) */
+    text-align: justify;
+    /* 양쪽 정렬 */
+    white-space: pre-wrap;
+    /* 줄 바꿈 유지 */
+}
+
+.poem_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    /* 적절한 최대 너비를 설정 */
+}
+
+.fragment {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.fragment::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: 0.5em;
+}
+
+/* 중앙 정렬 효과를 위한 custom CSS */
+.fragment p {
+    text-indent: 0;
+    /* 기본 들여쓰기 제거 */
+    text-align: justify;
+}
+
+.fragment::first-line {
+    text-indent: 1em;
+    /* 첫 줄 들여쓰기 */
+}
+
+.no-poemBox {
+    /* 부드러운 배경색 설정 */
+    border: 2px dashed #ccc;
+    /* 점선 테두리 추가 */
+    border-radius: 8%;
+    /* 둥근 모서리 설정 */
+    margin-bottom: 5rem;
+    /* 아래쪽 여백 추가 */
+    text-align: center;
+    /* 내용 중앙 정렬 */
+    font-family: Gmarket Sans, 'Source Sans Pro';
+    background-image: url('/contentPage/makePoem/background.svg');
+    background-size: cover;
+
+    width: 99%;
+    /* Adjust width and height as needed */
+    height: auto;
+    border-radius: 8%;
+    position: relative;
+    /* 부모 요소에 상대 위치 지정 */
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.no-poemBox p {
+    font-size: 1.2rem;
+    /* 메시지 텍스트 크기 설정 */
+    color: #333;
+    /* 메시지 텍스트 색상 설정 */
+    margin-bottom: 1rem;
+    /* 메시지와 버튼 사이에 여백 추가 */
+}
+
+.create-poem-button {
+    background: linear-gradient(135deg, #e3d8cf, #c6b2a6);
+    /* 은은한 그라데이션 배경 */
+    color: #4b3832;
+    /* 고급스러운 다크 브라운 텍스트 */
+    font-size: 1.3rem;
+    /* 텍스트 크기 */
+    font-family: 'Playfair Display', serif;
+    /* 감성적이고 세련된 폰트 */
+    padding: 0.8rem 2.5rem;
+    /* 버튼 내부 여백 */
+    border: 1px solid #b8a08c;
+    /* 부드러운 테두리 */
+    border-radius: 40px;
+    /* 둥근 모서리로 부드러운 느낌 */
+    cursor: pointer;
+    /* 클릭 가능한 포인터 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* 버튼에 부드러운 그림자 효과 */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* 호버 및 클릭 시 부드러운 애니메이션 */
+}
+
+.create-poem-button:hover {
+    background: linear-gradient(135deg, #c6b2a6, #a68e7f);
+    /* 호버 시 색상 변화 */
+    transform: translateY(-4px);
+    /* 호버 시 살짝 떠오르는 효과 */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    /* 호버 시 그림자 강화 */
+}
+
+.create-poem-button:active {
+    background: linear-gradient(135deg, #e3d8cf, #c6b2a6);
+    /* 클릭 시 원래 색상으로 복귀 */
+    transform: translateY(0);
+    /* 클릭 시 원래 위치로 돌아감 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* 클릭 시 원래 그림자 복귀 */
+}
+
+.create-poem-button:focus {
+    outline: none;
+    /* 포커스 시 외곽선 제거 */
+    box-shadow: 0 0 0 5px rgba(198, 178, 166, 0.5);
+    /* 포커스 시 부드러운 외곽선 효과 */
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    width: 60%;
+}
+
+.dialog p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+}
+
+.dialog button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog button:hover {
+    background-color: #0056b3;
+}

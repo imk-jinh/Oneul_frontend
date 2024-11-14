@@ -1,0 +1,197 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 요소를 수직으로 중앙 정렬합니다. */
+  width: 90%;
+  margin: 0.3rem 0 0 0%;
+  position: fixed;
+  z-index: 9999;
+}
+
+.top2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 요소를 수직으로 중앙 정렬합니다. */
+  width: 90%;
+  /* margin: 0rem 0 0 5%; */
+  position: fixed;
+  top: 6rem;
+  left: 5%;
+  /* 위 아래는 1rem, 좌우는 auto로 설정하여 가운데 정렬합니다. */
+}
+
+
+.leftArrow {
+  width: 20px;
+  /* 예시로 크기를 지정합니다. */
+  height: 20px;
+  order: 1;
+  /* 배치 순서를 조정합니다. */
+}
+
+/* 현재 화면 이름 < 알림 > */
+.noti {
+  overflow-wrap: break-word;
+  font-family: 'Gmarket Sans TTF', 'Roboto Condensed';
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0rem;
+  color: #000000;
+  order: 2;
+  /* 배치 순서를 조정합니다. */
+}
+
+/* 모두 읽음 */
+.all_read {
+  margin: 0.1rem 0 0.3rem 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #A8A8A8;
+  order: 3;
+  /* 배치 순서를 조정합니다. */
+}
+
+
+.unread-notification {
+  margin: 0 0.4rem 0.1rem 0;
+  display: inline-block;
+  width: 16.8rem;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #000000;
+}
+
+.all-notifications {
+  margin-right: 0.2rem;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #000000;
+}
+
+.separation-container {
+  background: #D9D9D9;
+  width: 100%;
+  height: 1.2rem;
+  position: fixed;
+  top: 7.2rem;
+}
+
+.Acontainer {
+  background: #ffffff;
+  width: 100%;
+  margin-top: 8.4rem;
+  height: calc(100% - 213px);
+  overflow-y: auto;
+}
+
+/* 수직 스크롤을 허용 */
+
+.day-notification {
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  background: #FFFFFF;
+  position: relative;
+  /* display: flex; */
+  flex-grow: 1;
+  /* 가능한 최대 크기로 확장 */
+  box-sizing: border-box;
+  padding: 0.8rem 1.3rem 0.9rem 1.3rem;
+  box-sizing: border-box;
+  border-top: 1px solid #D9D9D9;
+  /* 회색 테두리 추가 */
+  height: 3rem;
+}
+
+.noti-box {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  /* 가능한 최대 크기로 확장 */
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  /* 좌우에 1rem의 내부 여백 추가 */
+  border: 1px solid #D9D9D9;
+  height: 3rem;
+}
+
+.noti-content {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoL00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  /* 내용을 수직으로 중앙 정렬 */
+}
+
+.noti-icon {
+  width: 1.2rem;
+  height: 1rem;
+}
+
+.noti-text {
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoL00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.6rem;
+  margin-left: 1rem;
+  color: #000000;
+}
+
+.notification-dropdown {
+  background-color: whitesmoke;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  /* 배경색을 흰색으로 설정합니다. */
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+  /* 그림자 효과를 추가합니다. */
+  z-index: 999;
+  /* 다른 요소 위에 표시되도록 z-index를 설정합니다. */
+}
+
+.choice-noti {
+  height: 3.6rem;
+  align-items: center;
+  display: flex;
+  padding-left: 1rem;
+  /* border-bottom: 0.1rem solid black; */
+
+}
+
+.notification-dropdown.open {
+  display: block;
+}
+
+.notification-option {
+  border-bottom: 0.1rem solid #E9E9E9;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  /* 수직 가운데 정렬을 위해 세로 정렬을 사용합니다. */
+  padding: 0 1rem;
+  /* 좌우 여백을 추가합니다. */
+}
+
+.notification-option:hover {
+  background-color: #f9f9f9;
+}
+
+.notification-option:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,192 @@
+.setNameFrame {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.backKey {
+    align-self: flex-start;
+    flex-shrink: 0;
+    height: 1.5rem;
+    margin: 2rem 0rem 2rem 2rem;
+    object-fit: contain;
+    position: relative;
+    vertical-align: top;
+    width: 1.8rem;
+}
+
+
+.setNameTitle {
+    color: #000000;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.8rem;
+    font-weight: 200;
+    letter-spacing: 0.06rem;
+    line-height: 1.2575;
+    margin: 0rem 0rem 0rem 2rem;
+    max-width: 100%;
+}
+
+.nameGuide {
+    color: #a8a8a8;
+    margin: 1rem 0rem 2rem 2rem;
+    max-width: 100%;
+}
+
+.guide1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.guide2 {
+    color: #a8a8a8;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2575;
+}
+
+.guide3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nameSpace {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 0.9rem;
+    box-sizing: border-box;
+    /* 테두리와 패딩을 포함한 크기 계산 */
+    height: 4.1rem;
+    margin: 2.5rem 2rem 0 2rem;
+    width: calc(100% - 4rem);
+    position: relative;
+    padding: 0;
+    /* padding이 있을 경우 제거 */
+}
+
+.nameInner {
+    display: flex;
+    width: calc(100% - 2.8rem);
+    height: 100%;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.placeholder {
+    align-items: center;
+    height: 100%;
+    color: #969494;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 10;
+    white-space: nowrap;
+    margin: 0 0 0 1rem;
+    position: absolute;
+    display: flex;
+}
+
+.input {
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    color: #000000;
+    flex-shrink: 0;
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2575;
+    white-space: nowrap;
+    width: calc(100% - 2.2rem);
+    margin-left: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.delete {
+    right: 0;
+    margin: 0 1.2rem 0 0;
+    height: 1.3rem;
+    width: 1.3rem;
+    object-fit: contain;
+    position: absolute;
+}
+
+.confirm {
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 0.09rem #000000;
+    border-radius: 0.9rem;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* absolute로 설정하여 부모 요소의 하단에 위치 */
+    bottom: 1rem;
+    left: 5%;
+    transition: all 0.3s ease;
+}
+
+
+.confirm:hover {
+    background-color: #000000;
+    /* 배경색 반전 */
+    color: #ffffff;
+    /* 텍스트 색상 반전 */
+    border-color: #ffffff;
+    /* 테두리 색상 반전 */
+    cursor: pointer;
+    /* 커서 모양을 포인터로 변경 */
+}
+
+.confirm:active {
+    transform: scale(0.95);
+    /* 크기를 살짝 축소 */
+    transition: transform 0.1s ease;
+    /* 클릭 시 빠르게 축소 */
+}
+
+
+
+.TitleNext {
+    color: inherit;
+    /* 부모의 색상을 상속 (hover 상태에서 흰색) */
+    font-family: AppleSDGothicNeoB00, 'Source Sans Pro';
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    white-space: nowrap;
+}
+
+
+.a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .frame5 {
+        width: 15.5rem;
+    }
+
+}

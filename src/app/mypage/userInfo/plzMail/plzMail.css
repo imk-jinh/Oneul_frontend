@@ -1,0 +1,53 @@
+  .guideSpace {
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .plzWriteName {
+    margin: 0rem 1.3rem 0rem 1.3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 1.9rem;
+    letter-spacing: 0rem;
+    color: #000000;
+  }
+
+  .mid-space {
+    margin: 2rem 1.4rem 0rem 1.4rem;
+    display: flex;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+
+  .container6 {
+    margin: 0.7rem 0 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .gmailCom {
+    overflow-wrap: break-word;
+    font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000000;
+  }
+
+  .wholeSpace {
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+    background: #F2F2F2;
+    position: relative;
+    border-radius: 0.6rem;
+    border: none;
+    background: #F2F2F2;
+    display: flex;
+    width: auto;
+    max-width: 10rem;
+    min-width: 4rem;
+    /* box-sizing: border-box; */
+  }

@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "Lets go",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "오늘",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "www.oneuldiary",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "id": "oneul_v_0"
+}

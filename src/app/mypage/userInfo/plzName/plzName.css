@@ -1,0 +1,42 @@
+
+.guideSpace {
+  height: auto;
+  margin-top: 100px;
+}
+
+.plzWriteName {
+  margin: 0rem 1.3rem 0rem 1.3rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: 0rem;
+  color: #000000;
+}
+
+.nameGuide {
+  margin-left: 1.3rem;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #A9A9A9;
+}
+
+.nameWriteSpace {
+  border-radius: 0.6rem;
+  background: #F2F2F2;
+  position: relative;
+  margin: 1rem 1.3rem 0rem 1.4rem;
+  padding: 1.3rem 1.2rem 1.6rem 1.2rem;
+  width: calc(100% - 2.6rem);
+  box-sizing: border-box;
+}
+
+.fillname {
+  border: none;
+  background: #F2F2F2;
+  font-size: 1.2rem;
+}

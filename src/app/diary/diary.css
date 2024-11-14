@@ -1,0 +1,395 @@
+.wrap {
+  height: 100%;
+}
+
+.top_group1 {
+  display: flex;
+}
+
+.blockleft {
+  display: block;
+  width: 10%;
+}
+
+.blockRight {
+  display: block;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.top_fixed2 {
+  position: fixed;
+  width: 90%;
+  top: 3.2rem;
+  height: fit-content;
+  /* max-height: 100px; */
+  background-color: white;
+  /* 배경을 지정해 뒤의 콘텐츠가 가려지도록 */
+  z-index: 1000;
+  /* 다른 요소보다 앞에 위치하도록 설정 */
+  left: 5%;
+}
+
+.left-arrow3 {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+}
+
+.content_space1 {
+  top: 7rem;
+  width: 90%;
+  align-items: end;
+  background-color: #ffffff;
+  border: solid 0.1rem #000000;
+  border-radius: 1.4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0rem 0rem 0rem 5%;
+  padding: 1.6rem 2.5rem 5rem 2.5rem;
+  height: calc(100% - 195px);
+  /* 고정 높이 제거 */
+  max-height: none;
+  /* 최대 높이 제한 해제 */
+  position: relative;
+  overflow: visible;
+  /* 내부 콘텐츠에 따라 크기 확장 */
+  overflow-y: auto;
+}
+
+.innerSpace1 {
+  flex-shrink: 0;
+  height: auto;
+  /* margin: 0rem 0rem 0rem 0rem; */
+  position: relative;
+  width: 100%;
+}
+
+.diary_title1 {
+  color: #ccc;
+  flex-shrink: 0;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-weight: 400;
+  line-height: 1.2575;
+  white-space: nowrap;
+  position: relative;
+  /* width: 100%; */
+  margin: 0 0;
+}
+
+.diary_setTitle {
+  color: #505050;
+  flex-shrink: 0;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  /* width: 100%; */
+  white-space: nowrap;
+  position: relative;
+  height: 30px;
+  text-align: left;
+  /* border-radius: 5px; */
+  border: none;
+  /* 테두리 제거 */
+}
+
+.diary_setHashtag {
+  color: #505050;
+  flex-shrink: 0;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1rem;
+  line-height: 1.2;
+  height: 1.2rem;
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
+  width: 80%;
+  /* left: 10%; */
+  border: none;
+}
+
+.diary_hashtag1 {
+  color: gray;
+  flex-shrink: 0;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+/* 월,일의 일 */
+.Today_day {
+  color: #000000;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1.8rem;
+  font-weight: 400;
+  height: 1.8rem;
+  letter-spacing: 0.036rem;
+  line-height: 1.2575;
+  position: relative;
+  white-space: nowrap;
+  width: 1.6rem;
+  margin: 0 0;
+}
+
+/* 월 */
+.Today_month {
+  color: #000000;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.098rem;
+  line-height: 1.2575;
+  white-space: nowrap;
+  width: 1.9rem;
+  margin-top: 0rem;
+  position: relative;
+  margin: 0 0;
+}
+
+.emotion_select1 {
+  right: 0;
+  object-fit: contain;
+  /* position: absolute; */
+  top: 0.5rem;
+  vertical-align: top;
+  width: 3rem;
+  height: 3rem;
+}
+
+.text_space1 {
+  position: relative;
+  color: #505050;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 0.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  
+  /* 새로운 추가 */
+  width: 100%;          /* 부모 요소에 맞게 너비를 설정 */
+  min-height: 50px;      /* 최소 높이 */
+  white-space: pre-wrap; /* 줄바꿈 유지 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+}
+
+
+.shareIcon1 {
+  flex-shrink: 0;
+  height: 1.3167rem;
+  /* margin: -0.2rem 1rem 0.283rem 20rem; */
+  align-items: end;
+  object-fit: contain;
+  position: relative;
+  vertical-align: top;
+  width: 1.2rem;
+}
+
+/* 펼쳐보기 들어가는 이미지 박스 */
+.imageBox1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* 이미지를 한 줄에 모두 표시 */
+  justify-content: flex-start;
+  /* 왼쪽 정렬 */
+  height: auto;
+  width: 100%;
+}
+
+/* 사진 삽입 이미지 */
+.image_input {
+  flex-shrink: 0;
+  /* height: 8rem; */
+  object-fit: cover;
+  vertical-align: top;
+  width: 80%;
+  border-radius: 10%;
+  /* justify-content:flex-start; */
+  cursor: pointer;
+  position: relative;
+
+}
+
+.imgBoxContainer {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* 한 줄에 모든 이미지 표시 */
+  margin: 1rem 0 0 0rem;
+}
+
+.imgBox {
+  flex-shrink: 0;
+  width: calc(33.33% - 10px);
+  /* 이미지 박스의 너비를 text_space의 너비의 1/3로 설정하고 간격을 고려하여 계산 */
+  margin-bottom: 10px;
+  /* 아래쪽 여백 추가 */
+  margin-right: 10px;
+  /* 오른쪽 여백 추가 */
+}
+
+.imgBox img {
+  width: 100%;
+  /* 이미지가 부모 요소에 꽉 차도록 설정 */
+  border-radius: 10px;
+  /* 이미지 박스의 모서리를 둥글게 만듦 */
+  border: 0.1px solid #c08787;
+  /* 검정색 2px 테두리 */
+  border-radius: 8px;
+  /* 테두리 둥글게 */
+}
+
+.parent {
+  display: flex;
+  /* flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin-right: 5rem; */
+  width: 100%;
+  height: fit-content;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn_submit {
+  background-color: #ffffff;
+  border: none;
+  height: fit-content;
+}
+
+.writeComplete1 {
+  flex-shrink: 0;
+  height: 2.5rem;
+  margin: 0rem 0rem 0.15rem 0rem;
+  object-fit: cover;
+  vertical-align: top;
+  width: 2.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.writeComplete1:hover {
+  text-decoration: none;
+}
+
+.writeComplete_text1 {
+  align-items: center;
+  color: #868686;
+  display: flex;
+  flex-shrink: 0;
+  font-family: AppleSD고딕네오, 'Source Sans Pro';
+  font-size: 1.2rem;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: 0.024rem;
+  line-height: 1.2575;
+  white-space: nowrap;
+}
+
+.diary_textarea1 {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.tag_list {
+  position: relative;
+}
+
+.tag_item {
+  display: inline-flex;
+  /* 버튼과 텍스트를 한 줄에 표시 */
+  align-items: center;
+  /* 버튼과 텍스트의 수직 정렬 */
+  padding: 0.3rem 0.6rem;
+  /* 태그 내부 여백 설정 (선택 사항) */
+  background-color: rgb(158, 152, 175);
+  /* 태그 배경색 설정 (선택 사항) */
+  border-radius: 0.3rem;
+  /* 태그 모서리 둥글게 */
+}
+
+.warning_message {
+  position: relative;
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* 감정 이모티콘 컨테이너 세로 배치 */
+.emoticon_select1 {
+  display: flex;
+  flex-direction: column;
+  /* 세로로 나열 */
+  position: absolute;
+  top: 5rem;
+  right: 0.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* 감정 이모티콘 이미지 스타일 */
+.emoticon-item {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  /* 아이콘 사이에 간격 추가 */
+  cursor: pointer;
+}
+
+.emoticon-item.selectedEmotiicon {
+  border: 2px solid #000;
+  /* 선택된 이모티콘 강조 */
+  border-radius: 5px;
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  width: 60%;
+}
+
+.dialog p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.dialog button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dialog button:hover {
+  background-color: #0056b3;
+}

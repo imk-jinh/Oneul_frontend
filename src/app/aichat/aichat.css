@@ -1,0 +1,362 @@
+.top_group {
+  display: flex;
+  justify-content:center; /* 좌, 중, 우 순서로 배치 */
+  gap: 15%;
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 100%;
+  height: 50px;
+  /* left:5%; */
+  box-sizing: border-box;
+  position: fixed;
+  margin-top: 4rem;
+  /* padding: 0 2rem; 좌우 여백 추가 (선택 사항) */
+}
+
+/* 하단 구분선 디자인 */
+.top_line {
+  width: 100%;
+  /* 선의 길이를 top_group의 전체 너비로 설정 */
+  height: 1px;
+  /* 선의 두께 설정 */
+  background-color: #ccc;
+  /* 선의 색상 설정 */
+  position: fixed;
+  margin-top: calc(50px + 4rem);
+  /* 부모(top_group)의 기준으로 위치 설정 */
+}
+
+
+.aichat_date,
+.title,
+.aichat_exit {
+  margin: 0;
+  display: inline-block;
+  font-family: 'AppleSDGothicNeoB00', 'Roboto Condensed';
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.aichat_date {
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0 1rem;
+  /* 좌우 간격 조정 */
+  color: #000000;
+}
+
+.aichat_exit {
+  font-size: 0.8rem;
+  color: red;
+  text-decoration: none;
+  /* 밑줄 추가 */
+  cursor: pointer;
+  /* 클릭 가능한 커서 표시 */
+}
+
+.aichat_exit:hover {
+  color: #ff6b6b;
+  /* 마우스 오버 시 강조된 색상 */
+  font-size: 0.9rem;
+  /* 마우스 오버 시 크기 확대 */
+  transform: scale(1.05);
+  /* 살짝 더 커지도록 */
+}
+
+.aichat_exit:active {
+  color: #b53939;
+  /* 클릭 시 눌린 듯한 색상 */
+  font-size: 0.85rem;
+  /* 클릭 시 살짝 줄어들도록 */
+  transform: scale(0.95);
+  /* 클릭 시 버튼이 약간 눌린 것처럼 작아짐 */
+}
+
+.spinnerZone {
+  position: relative;
+  margin-bottom: -4rem;
+  /* width: 100%; 
+  height: 100%; */
+}
+
+.loadingZone {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.spinner-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 0.4rem solid #505050;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  bottom: 3.75rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0.4rem solid transparent;
+  border-left-color: #FFFEED;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+/* 메시지 컨테이너 스타일 */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100%-4rem);
+  /* margin-top: 7rem; */
+  /* 세로 스크롤 활성화 */
+}
+
+/* 개별 메시지 스타일 */
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* 보낸 메시지 스타일 */
+.mine {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+/* 받은 메시지 스타일 */
+.theirs {
+  background-color: #eaeaea;
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+
+ /* 하단 구분선 디자인 */
+ .bottom_line3 {
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  /* padding-top: 1.1rem; */
+  width: 100%;
+  position: fixed;
+  /* 메뉴바를 화면에 고정합니다. */
+  bottom: 0;
+  /* 하단에 고정됩니다. */
+  background-color: #ffffff;
+}
+
+.bottomChatUI {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* 요소들을 수직 가운데 정렬 */
+  padding: 0.2rem;
+  background: white;
+  /* 배경색 추가 */
+  box-sizing: border-box;
+}
+
+.sendMessage_Space {
+  border-radius: 1.4rem;
+  /* background: #F2F2F2; */
+  position: relative;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  width: calc(100% - 4rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  bottom: 0rem;
+  border: solid 0.1rem #A4A4A4;
+}
+
+.sendText {
+  font-size: 0.8rem;
+  border: none;
+  /* background: #F2F2F2; */
+  width: 90%;
+  margin-left: 1rem;
+  box-sizing: border-box;
+}
+
+.circle-border {
+  display: flex;
+  /* Flexbox 활성화 */
+  justify-content: center;
+  /* 수평 중앙 정렬 */
+  align-items: center;
+  /* 수직 중앙 정렬 */
+  border: solid 0.1rem #A4A4A4;
+  border-radius: 100%;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.selectImg {
+  width: 1.4rem;
+  width: 70%;
+  /* 이미지를 원의 크기에 맞게 조절 */
+  height: 70%;
+  /* 이미지를 원의 크기에 맞게 조절 */
+}
+
+
+/* 종료 안내 메시지 출력 내용 */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
+.container6 {
+  border-radius: 0.5rem;
+  background: #555555;
+  position: absolute;
+  top: 70%;
+  left: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.9rem 0 0.7rem 0;
+  width: 70%;
+  height: 15%;
+  box-sizing: border-box;
+}
+
+.container10 {
+  margin: 0 0.1rem 0.1rem 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0rem;
+  color: #FFFFFF;
+}
+
+.line45 {
+  height: 0.1rem;
+  background: #FFFFFF;
+  margin-bottom: 0.1rem;
+  width: 5.6rem;
+}
+
+.container11 {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'AppleSDGothicNeoM00', 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0rem;
+  color: #D9D9D9;
+}
+
+.block {
+  display: block;
+  position: relative;
+  /* Use relative positioning instead */
+  top: 0;
+  /* Start from the top */
+  width: 100%;
+  height: auto;
+  /* Adjust height based on the content */
+  padding-bottom: 1rem;
+  /* Add padding to create space for the content below */
+}
+
+.content_space {
+  position: relative;
+  margin: 0rem 0 0 0;
+  width: 100%;
+  top:calc(4rem + 50px);
+  height: calc(100% - (7rem + 50px));
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  width: 60%;
+}
+
+.dialog p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.dialog button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dialog button:hover {
+  background-color: #0056b3;
+}
