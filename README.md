@@ -2,7 +2,6 @@
 
 "오늘.:about today"의 프론트 서버입니다.<br>
 
-
 <br><br><br>
 
 ## Getting Started
@@ -16,6 +15,7 @@
 yarn install
 yarn dev
 ```
+
 <br>
 
 ### Prerequisites
@@ -35,6 +35,7 @@ yarn dev
 ```bash
 npm start
 ```
+
 <br><br><br>
 
 ## License
@@ -47,6 +48,6 @@ npm start
 
 프로젝트에 기여한 김진형, 심동훈, 유찬영님에게 대한 감사의 인사를 표시합니다.
 
-- [김진형]()
+- [김진형](https://imkchannel.com/)
 - [심동훈]()
 - [유찬영](http://youngchannel.co.kr/)
